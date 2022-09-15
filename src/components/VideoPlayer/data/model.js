@@ -1,0 +1,7 @@
+const videoPlayerData = {
+  playlist: [
+    {
+      file: "",
+    },
+  ],
+};
