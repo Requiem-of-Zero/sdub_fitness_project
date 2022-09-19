@@ -1,8 +1,10 @@
 const CTATilesData = {
   news: {
     banner: {
-      imgUrl: "https://images6.alphacoders.com/110/1101614.jpg",
+      imgUrl:
+        "https://i.pinimg.com/originals/f7/f3/8e/f7f38ee002f18b7d3a1f87fca020c56c.jpg",
       redirectUrl: "https://www.google.com",
+      imgAlt: "satoru gojo minimalist",
     },
     newsCTAs: [
       {
@@ -54,3 +56,5 @@ const CTATilesData = {
     },
   ],
 };
+
+export default CTATilesData;
