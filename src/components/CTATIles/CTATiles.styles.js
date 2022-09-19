@@ -16,6 +16,7 @@ export const CTATilesContainer = styled.div`
 
 export const LeftSection = styled.div`
   > h2 {
+    font-size: 26px;
     font-weight: 400;
     font-style: italic;
   }
@@ -32,9 +33,11 @@ export const LeftSection = styled.div`
       float: left;
       width: 47%;
       a {
+        font-size: 14px;
         color: black;
         text-decoration: none;
         > h2 {
+          font-size: 20px;
           margin: 0;
         }
         &:hover {
