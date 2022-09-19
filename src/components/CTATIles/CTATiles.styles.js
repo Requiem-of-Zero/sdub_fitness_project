@@ -1,65 +1,100 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
-export const CTATilesWrapper = styled.div`
-
-`;
+export const CTATilesWrapper = styled.div``;
 
 export const CTATilesContainer = styled.div`
-display: grid;
-grid-template-columns: 2fr 1fr;
-    width: 980px;
-    margin: 0 auto;
-    img {
-        width: 100%;
-        height: 150px;
-        background-size: 200px 100px;
-    }
+  display: grid;
+  gap: 30px;
+  grid-template-columns: 2fr 1fr;
+  width: 1000px;
+  margin: 0 auto;
+  img {
+    width: 100%;
+    height: 150px;
+  }
 `;
 
 export const LeftSection = styled.div`
+  > h2 {
+    font-weight: 400;
+    font-style: italic;
+  }
 
-    >h2 {
-        font-weight: 400;
-        font-style: italic;
+  hr {
+    margin-bottom: 30px;
+  }
+
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    li {
+      float: left;
+      width: 47%;
+      a {
+        color: black;
+        text-decoration: none;
+        > h2 {
+          margin: 0;
+        }
+        &:hover {
+          color: black;
+          text-decoration: underline;
+        }
+      }
+
+      .read_more {
+        color: blue;
+      }
     }
 
-    hr {
-        margin-bottom: 30px;
+    li:nth-child(1) {
+      padding-bottom: 30px;
     }
 
-    ul {
-        list-style: none;
-        padding: 0;
-        margin: 0;
-
-        li {
-            float: left;
-            width: 47%;
-            a {
-                color: black;
-                text-decoration: none;
-                &:hover{
-                    color: black;
-                    text-decoration: underline;
-                }
-            }
-
-            .read_more{
-                color: blue;
-            }
-        }
-        
-        li:nth-child(1){
-            padding-bottom: 30px;
-        }
-
-        li:nth-child(odd){
-            padding-right: 30px;
-        }
+    li:nth-child(odd) {
+      padding-right: 30px;
     }
+  }
 `;
 
 export const RightSection = styled.div`
+  padding-top: 40px;
+  width: 300px;
+  ul {
+    padding: 0;
+    list-style: none;
 
+    li:not(:last-child){
+        padding-bottom: 20px;
+    }
+  }
+`;
+export const VideoSearchContainer = styled.div`
+  width: inherit;
+  border-radius: 14px 0 0 14px;
 `;
 
+export const VideoSearch = styled.input`
+  width: 75%;
+  padding: 4px 12px;
+  padding-top: 5px;
+  padding-bottom: 4px;
+  border-radius: 14px 0 0 14px;
+`;
+
+export const VideoSearchBtn = styled.button`
+  width: 15%;
+  border-radius: 0 14px 14px 0;
+  background: #363636;
+  border-color: #363636;
+  padding: 4px 12px;
+  padding-top: 4px;
+  padding-right: 12px;
+  padding-bottom: 4px;
+  padding-left: 12px;
+
+  svg {
+    color: #fff;
+  }
+`;
