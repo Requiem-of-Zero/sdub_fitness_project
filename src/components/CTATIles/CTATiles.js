@@ -10,7 +10,7 @@ const CTATiles = () => {
     <CTATilesWrapper>
       <CTATilesContainer>
         <LeftSection>
-Test
+          
         </LeftSection>
         <RightSection>
 
