@@ -57,7 +57,13 @@ export const RightContainer = styled.div`
     margin-bottom: 10px;
     padding: 20px;
     background: black;
+    height: 100px;
     color: white;
+    a {
+        text-decoration: none;
+        font-style: italic;
+        padding-left: 10px;
+    }
     div {
       text-align: right;
     }

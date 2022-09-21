@@ -41,6 +41,7 @@ const MemberTestimonials = ({ testimonials }) => {
           <RightContainer>
             <div>
               {memberTestimonial}
+              <a href={currentTestimonial.redirectUrl}>[Read More]</a>
               <div>{`${firstName} ${lastName} - ${location}`}</div>
               <div className="triangle"></div>
             </div>
