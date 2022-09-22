@@ -19,7 +19,7 @@ export const LabelWrapper = styled.div`
     playing &&
     `
 overflow: hidden;
-bottom: -100px;
+bottom: -110px;
 transition: all 0.5s linear;
 `}
 `;

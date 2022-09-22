@@ -1,9 +1,8 @@
-import React from 'react'
+import React from "react";
+import { CarouselWrapper } from "./CoverCarousel.styles";
 
 const CoverCarousel = () => {
-  return (
-    <div>CoverCarousel</div>
-  )
-}
+  return <div>CoverCarousel</div>;
+};
 
-export default CoverCarousel
+export default CoverCarousel;
