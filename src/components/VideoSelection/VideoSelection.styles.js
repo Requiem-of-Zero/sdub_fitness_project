@@ -13,7 +13,7 @@ export const LabelWrapper = styled.div`
   position: absolute;
   bottom: 0;
   width: 100%;
-  height: 100px;
+  height: 110px;
   background: rgba(0, 0, 0, 0.7);
   ${({ playing }) =>
     playing &&
@@ -55,6 +55,7 @@ export const VideoTiles = styled.ul`
   right: 15%;
   list-style: none;
   line-height: 2rem;
+  z-index: 3;
 `;
 
 export const TileImg = styled.img`
@@ -64,7 +65,7 @@ export const TileImg = styled.img`
   ${({ selected }) =>
     selected &&
     `
-  border: 1px solid blue;
+  border: 2px solid blue;
   `}
   &:hover {
     border: 1px solid blue;
