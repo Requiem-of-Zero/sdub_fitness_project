@@ -1,9 +1,10 @@
 import styled from 'styled-components';
 
 export const CoverWrapper = styled.div`
-    max-width: 234px;
-    font-size: 14px;
+    max-width: 174px;
+    font-size: 12px;
     img{
+        height: 234px;
         width: 100%;
     }
 

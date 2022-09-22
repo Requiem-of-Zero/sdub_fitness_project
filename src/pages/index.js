@@ -1,6 +1,11 @@
 import Head from 'next/head'
 import Navbar from '../components/NavBar/Navbar';
 import VideoPlayer from '../components/VideoPlayer/VideoPlayer';
+import CTATiles from '../components/CTATIles/CTATiles';
+import MemberTestimonials from '../components/MemberTestimonials';
+import VideoSelection from '../components/VideoSelection/VideoSelection';
+import CoverCarousel from '../components/CoverCarousel/CoverCarousel';
+import Footer from '../components/Footer/Footer';
 import navBarData from '../components/NavBar/data/model';
 
 export default function Home() {
@@ -13,6 +18,7 @@ export default function Home() {
       </Head>
       <Navbar {...navBarData} />
       <VideoPlayer />
+
     </>
   );
 }

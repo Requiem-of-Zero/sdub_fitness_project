@@ -10,9 +10,9 @@ const coversData = {
     },
     {
       imgUrl:
-        "https://static.wikia.nocookie.net/jujutsu-kaisen/images/2/2f/Volume_2.png/revision/latest?cb=20181028145329",
+        "https://en.datosjam.net.pe/wp-content/uploads/2021/09/Jujutsu-Kaisen-manga-reveals-cover-for-volume-17.jpg",
       redirectUrl: "https://www.google.com",
-      title: "Jujutsu Kaisen Vol. 2",
+      title: "Jujutsu Kaisen Vol. 17",
       year: "2007",
       month: "Summer",
     },
@@ -42,17 +42,17 @@ const coversData = {
     },
     {
       imgUrl:
-        "https://static.wikia.nocookie.net/ippo/images/3/3e/Volume_128.png/revision/latest?cb=20200618093647",
+        "https://hajime-noippo.com/wp-content/uploads/2019/11/05affe8247e94c03a2bf380b95935d5f-tv-anime-anime-comics-720x1099.jpg",
       redirectUrl: "https://www.google.com",
-      title: "Hajime No Ippo Vol. 128",
+      title: "Hajime Ippo Vol. 45",
       year: "2003",
       month: "October",
     },
     {
       imgUrl:
-        "https://static.wikia.nocookie.net/ippo/images/0/0e/Volume_1.png/revision/latest?cb=20190123174530",
+        "https://comicvine.gamespot.com/a/uploads/scale_small/11145/111450787/7876871-9784065226520_obi_w.jpg",
       redirectUrl: "https://www.google.com",
-      title: "Hajime No Ippo Vol. 1",
+      title: "Hajime Ippo Vol. 130",
       year: "2009",
       month: "June",
     },
@@ -60,7 +60,7 @@ const coversData = {
       imgUrl:
         "https://comicvine.gamespot.com/a/uploads/scale_small/6/67663/4511848-110.jpg",
       redirectUrl: "https://www.google.com",
-      title: "Hajime No Ippo Vol. 110",
+      title: "Hajimen Ippo Vol. 110",
       year: "2009",
       month: "May",
     },
@@ -72,10 +72,9 @@ const coversData = {
       month: "April",
     },
     {
-      imgUrl:
-        "https://static.wikia.nocookie.net/haikyuu/images/8/85/Volume_33.jpg/revision/latest?cb=20180803004504",
+      imgUrl: "https://dw9to29mmj727.cloudfront.net/products/142158770X.jpg",
       redirectUrl: "https://www.google.com",
-      title: "Haikyuu Vol. 33",
+      title: "Haikyuu Vol. 5",
       year: "2009",
       month: "July",
     },
