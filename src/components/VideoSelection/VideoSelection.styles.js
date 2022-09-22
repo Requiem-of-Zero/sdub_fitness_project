@@ -13,7 +13,15 @@ export const LabelWrapper = styled.div`
   position: absolute;
   bottom: 0;
   width: 100%;
+  height: 100px;
   background: rgba(0, 0, 0, 0.7);
+  ${({ playing }) =>
+    playing &&
+    `
+overflow: hidden;
+bottom: -100px;
+transition: all 0.5s linear;
+`}
 `;
 
 export const LabelContainer = styled.div`
@@ -47,13 +55,18 @@ export const VideoTiles = styled.ul`
   right: 15%;
   list-style: none;
   line-height: 2rem;
+`;
 
-  img {
-    max-width: 120px;
-    height: auto;
-    border: 1px solid transparent;
-    &:hover {
-        border: 1px solid blue;
-    }
+export const TileImg = styled.img`
+  max-width: 120px;
+  height: auto;
+  border: 1px solid transparent;
+  ${({ selected }) =>
+    selected &&
+    `
+  border: 1px solid blue;
+  `}
+  &:hover {
+    border: 1px solid blue;
   }
 `;
