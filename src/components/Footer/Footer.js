@@ -88,9 +88,9 @@ const Footer = ({ left, middle, right }) => {
         <Divider></Divider>
         <p>
           ©2021 sdubfitness.com - All Right Reserved - Questions:
-          <a href="mailto:theesamwong@gmail.com">theesamwong@gmail.com</a> -
-          Support & Webmaster: 
-          <a href="mailto:theesamwong@gmail.com">theesamwong@gmail.com</a> -
+          <a href="mailto:theesamwong@gmail.com"> theesamwong@gmail.com</a> -
+          Support & Webmaster:
+          <a href="mailto:theesamwong@gmail.com"> theesamwong@gmail.com</a> -
           Site Operated by: <a href='https://www.samuelwong.xyz/'>Samuel Wong</a>
         </p>
       </div>

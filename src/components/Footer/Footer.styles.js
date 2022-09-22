@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const FooterWrapper = styled.footer`
   background: black;
-  height: 300px;
+  height: 400px;
 
   .container {
     max-width: 1000px;
@@ -23,7 +23,7 @@ export const FooterWrapper = styled.footer`
 `;
 export const Divider = styled.div`
 width: 100%;
-padding: 0 0 0 0;
+margin: 0 0 10px 0;
 border: 0.5px solid #555555;
 `
 export const FooterContentContainer = styled.div`
@@ -31,7 +31,7 @@ export const FooterContentContainer = styled.div`
   margin: 0 auto;
   display: flex;
   gap: 20px;
-
+  padding: 45px 0 20px 0;
   h2{
     font-size: 20px;
     text-transform: uppercase;
