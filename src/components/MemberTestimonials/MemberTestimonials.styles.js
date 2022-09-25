@@ -3,7 +3,10 @@ import styled from "styled-components";
 export const TestimonialWrapper = styled.section``;
 
 export const TestimonialContainer = styled.div`
+  margin: 0 auto;
   max-width: 1000px;
+  padding: 50px 0 50px 0;
+
   div {
     margin: 0 auto;
   }
@@ -60,9 +63,9 @@ export const RightContainer = styled.div`
     height: 100px;
     color: white;
     a {
-        text-decoration: none;
-        font-style: italic;
-        padding-left: 10px;
+      text-decoration: none;
+      font-style: italic;
+      padding-left: 10px;
     }
     div {
       text-align: right;

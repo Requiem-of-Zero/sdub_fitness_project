@@ -4,6 +4,7 @@ export const VideoSelectionWrapper = styled.div`
   height: 550px;
   position: relative;
   iframe {
+    border: none;
     width: 100%;
     height: 100%;
   }
@@ -19,8 +20,8 @@ export const LabelWrapper = styled.div`
     playing &&
     `
 overflow: hidden;
-bottom: -110px;
-transition: all 0.5s linear;
+height: 0;
+transition: all 0.3s linear;
 `}
 `;
 
@@ -30,9 +31,6 @@ export const LabelContainer = styled.div`
   max-width: 1000px;
   margin: 0 auto;
   padding: 30px 0;
-  > * {
-    margin: 0;
-  }
   a {
     color: #fff;
     text-decoration: none;
@@ -61,13 +59,13 @@ export const VideoTiles = styled.ul`
 export const TileImg = styled.img`
   max-width: 120px;
   height: auto;
-  border: 1px solid transparent;
+  border: 2px solid transparent;
   ${({ selected }) =>
     selected &&
     `
   border: 2px solid blue;
   `}
   &:hover {
-    border: 1px solid blue;
+    border: 2px solid blue;
   }
 `;

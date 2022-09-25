@@ -60,14 +60,11 @@ export const HeaderContainer = styled.div`
   h2 {
     color: #fff;
     font-size: 14px;
-    margin: 0;
   }
 `;
 
 export const FooterLinksList = styled.ul`
   list-style: none;
-  margin: 0;
-  padding: 0;
   display: flex;
   flex-direction: column;
   height: 70px;
@@ -98,7 +95,6 @@ margin-bottom: 15px;
 
 export const SocialsContainer = styled.ul`
   display: flex;
-  margin: 0;
   padding: 10px 0 0 0;
   list-style: none;
   li:not(:last-child) {

@@ -10,7 +10,6 @@ export const CoverWrapper = styled.div`
 
     h2,p {
         font-weight: 700;
-        margin: 0;
     }
 
     h2 {

@@ -3,7 +3,6 @@ import styled from "styled-components";
 export const NavBarWrapper = styled.nav`
   height: 100px;
   ul {
-    padding: 0;
     display: flex;
     list-style: none;
   }
@@ -27,9 +26,6 @@ export const SocialsContainer = styled.div`
 display: flex;
 align-items: center;
   padding-left: 20px; 
-  ul {
-    margin: 0;
-  }
   li {
     margin-right: 20px;
   }
@@ -89,7 +85,6 @@ export const NavLinks = styled.ul`
   justify-content: center;
   height: inherit;
   position: relative;
-  margin: 0;
 `;
 
 export const NavLink = styled.a`

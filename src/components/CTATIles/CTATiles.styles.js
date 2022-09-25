@@ -3,6 +3,7 @@ import styled from "styled-components";
 export const CTATilesWrapper = styled.div``;
 
 export const CTATilesContainer = styled.div`
+padding-top: 100px;
   display: grid;
   gap: 30px;
   grid-template-columns: 2fr 1fr;
@@ -27,8 +28,6 @@ export const LeftSection = styled.div`
 
   ul {
     list-style: none;
-    padding: 0;
-    margin: 0;
     li {
       float: left;
       width: 47%;
@@ -38,7 +37,6 @@ export const LeftSection = styled.div`
         text-decoration: none;
         > h2 {
           font-size: 20px;
-          margin: 0;
         }
         &:hover {
           color: black;
@@ -65,7 +63,6 @@ export const RightSection = styled.div`
   padding-top: 40px;
   width: 300px;
   ul {
-    padding: 0;
     list-style: none;
 
     li:not(:last-child){
