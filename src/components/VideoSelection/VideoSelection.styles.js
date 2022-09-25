@@ -15,6 +15,7 @@ export const LabelWrapper = styled.div`
   bottom: 0;
   width: 100%;
   height: 110px;
+  padding: 20px 0 10px 0;
   background: rgba(0, 0, 0, 0.7);
   ${({ playing }) =>
     playing &&
@@ -22,6 +23,7 @@ export const LabelWrapper = styled.div`
 overflow: hidden;
 height: 0;
 transition: all 0.3s linear;
+
 `}
 `;
 
@@ -30,7 +32,6 @@ export const LabelContainer = styled.div`
   color: blue;
   max-width: 1000px;
   margin: 0 auto;
-  padding: 30px 0;
   a {
     color: #fff;
     text-decoration: none;

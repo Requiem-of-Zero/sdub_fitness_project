@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const CTATilesWrapper = styled.div``;
 
 export const CTATilesContainer = styled.div`
-padding-top: 100px;
+  padding-top: 100px;
   display: grid;
   gap: 30px;
   grid-template-columns: 2fr 1fr;
@@ -20,6 +20,7 @@ export const LeftSection = styled.div`
     font-size: 26px;
     font-weight: 400;
     font-style: italic;
+    padding-top: 20px;
   }
 
   hr {
@@ -64,9 +65,9 @@ export const RightSection = styled.div`
   width: 300px;
   ul {
     list-style: none;
-
-    li:not(:last-child){
-        padding-bottom: 20px;
+    padding-top: 20px;
+    li:not(:last-child) {
+      padding-bottom: 20px;
     }
   }
 `;

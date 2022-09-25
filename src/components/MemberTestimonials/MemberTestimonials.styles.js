@@ -66,6 +66,7 @@ export const RightContainer = styled.div`
       text-decoration: none;
       font-style: italic;
       padding-left: 10px;
+      color: blue;
     }
     div {
       text-align: right;

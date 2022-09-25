@@ -12,27 +12,27 @@ export const FooterWrapper = styled.footer`
     text-align: center;
     color: #999999;
     font-size: 12px;
-    a{
-        text-decoration: none;
+    a {
+      text-decoration: none;
     }
   }
 
-  hr{
+  hr {
     background-color: #555555;
   }
 `;
 export const Divider = styled.div`
-width: 100%;
-margin: 0 0 10px 0;
-border: 0.5px solid #555555;
-`
+  width: 100%;
+  margin: 0 0 10px 0;
+  border: 0.5px solid #555555;
+`;
 export const FooterContentContainer = styled.div`
   max-width: 1000px;
   margin: 0 auto;
   display: flex;
   gap: 20px;
   padding: 45px 0 20px 0;
-  h2{
+  h2 {
     font-size: 20px;
     text-transform: uppercase;
   }
@@ -78,6 +78,11 @@ export const FooterLinksList = styled.ul`
   a {
     text-decoration: none;
     color: #555555;
+
+    :hover {
+      color: blue;
+      transition: all 0.3s ease-in-out;
+    }
   }
 `;
 
@@ -87,10 +92,11 @@ export const RightSection = styled.div`
 `;
 
 export const ContactButton = styled.button`
-background: blue;
-border: none;
-padding: 10px 15px 10px 15px;
-margin-bottom: 15px;
+  background: blue;
+  border: none;
+  padding: 10px 15px 10px 15px;
+  margin-bottom: 15px;
+  cursor: pointer;
 `;
 
 export const SocialsContainer = styled.ul`
@@ -104,7 +110,7 @@ export const SocialsContainer = styled.ul`
     color: #555555;
 
     :hover {
-        color: red;
+      color: red;
     }
   }
 `;

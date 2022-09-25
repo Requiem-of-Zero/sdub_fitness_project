@@ -19,12 +19,23 @@ const Footer = ({ left, middle, right }) => {
   const { logoUrl } = left,
     { links } = middle,
     { socials } = right;
+
+  const sendMail = () => {
+    var link =
+      "mailto:theesamwong@gmail.com" +
+      "?cc=theesamwong@gmail.com" +
+      "&subject=" +
+      encodeURIComponent("Ticket Submission");
+    window.location.href = link;
+  };
   return (
     <FooterWrapper>
       <div className="container">
         <FooterContentContainer>
           <LeftSection>
-            <img src={logoUrl} alt="sdubfitness logo" />
+            <a href="https://www.google.com">
+              <img src={logoUrl} alt="sdubfitness logo" />
+            </a>
           </LeftSection>
           <MiddleSection>
             <HeaderContainer>
@@ -46,17 +57,21 @@ const Footer = ({ left, middle, right }) => {
               <h2>TEAMSAM.ORG</h2>
               <Divider />
             </HeaderContainer>
-            <img
-              src="https://i.pinimg.com/originals/48/b0/08/48b00863d2110db05118c6b4eb9b2180.jpg"
-              alt="team sdub"
-            />
+            <a href="https://www.google.com">
+              <img
+                src="https://i.pinimg.com/originals/48/b0/08/48b00863d2110db05118c6b4eb9b2180.jpg"
+                alt="team sdub"
+              />
+            </a>
           </MiddleSection>
           <RightSection>
             <HeaderContainer>
               <h2>Contact Us</h2>
               <Divider />
             </HeaderContainer>
-            <ContactButton href='mailto:theesamwong@gmail.com'>Contact Sam.</ContactButton>
+            <ContactButton onClick={() => sendMail()}>
+              Contact Sam.
+            </ContactButton>
             <HeaderContainer>
               <h2>Follow Sam</h2>
               <Divider />
@@ -91,7 +106,8 @@ const Footer = ({ left, middle, right }) => {
           <a href="mailto:theesamwong@gmail.com"> theesamwong@gmail.com</a> -
           Support & Webmaster:
           <a href="mailto:theesamwong@gmail.com"> theesamwong@gmail.com</a> -
-          Site Operated by: <a href='https://www.samuelwong.xyz/'>Samuel Wong</a>
+          Site Operated by:{" "}
+          <a href="https://www.samuelwong.xyz/">Samuel Wong</a>
         </p>
       </div>
     </FooterWrapper>
