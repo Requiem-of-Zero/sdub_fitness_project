@@ -14,6 +14,7 @@ import {
   NavLinks,
   NavLink,
 } from "./Navbar.styles";
+import { useUser } from "@auth0/nextjs-auth0";
 import DropDown from "../DropDown/DropDown";
 
 import { FaFacebookF, FaTwitter } from "react-icons/fa";
@@ -23,7 +24,8 @@ import { HiShoppingCart } from "react-icons/hi";
 import { AiOutlineCaretDown } from "react-icons/ai";
 
 const Navbar = ({ logoImgUrl, categorySections }) => {
-  const [currentDropDownId, setCurrentDropDown] = useState(null);
+  const [currentDropDownId, setCurrentDropDown] = useState(null),
+    { user, error, isLoading } = useUser();
   const currentDropDown = categorySections[currentDropDownId];
 
   return (
@@ -73,14 +75,18 @@ const Navbar = ({ logoImgUrl, categorySections }) => {
                 </li>
               </ul>
               <LoginSignupContainer>
-                <ul>
-                  <li>
-                    <a href="/api/auth/login">Login</a>
-                  </li>
-                  <li>
-                    <a href="#signup">Sign Up</a>
-                  </li>
-                </ul>
+                {user ? (
+                  <a href="/api/auth/logout">Log Out</a>
+                ) : (
+                  <ul>
+                    <li>
+                      <a href="/api/auth/login">Login</a>
+                    </li>
+                    <li>
+                      <a href="#signup">Sign Up</a>
+                    </li>
+                  </ul>
+                )}
               </LoginSignupContainer>
             </SecondaryNavContainer>
           </SecondaryNavBarContent>
@@ -104,10 +110,6 @@ const Navbar = ({ logoImgUrl, categorySections }) => {
                   const selected =
                     currentDropDown &&
                     categoryTitle === currentDropDown.categoryTitle;
-                  console.log(
-                    "🚀 ~ file: Navbar.js ~ line 99 ~ {categorySections.map ~ hasLinks",
-                    hasLinks
-                  );
                   return (
                     <li
                       key={key}
