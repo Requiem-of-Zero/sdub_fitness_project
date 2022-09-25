@@ -101,7 +101,9 @@ const Navbar = ({ logoImgUrl, categorySections }) => {
                     links,
                   } = category;
                   const hasLinks = links.length ? true : false;
-                  const selected = currentDropDown && (categoryTitle === currentDropDown.categoryTitle);
+                  const selected =
+                    currentDropDown &&
+                    categoryTitle === currentDropDown.categoryTitle;
                   console.log(
                     "🚀 ~ file: Navbar.js ~ line 99 ~ {categorySections.map ~ hasLinks",
                     hasLinks
@@ -121,10 +123,18 @@ const Navbar = ({ logoImgUrl, categorySections }) => {
                           <span>{categoryTitle}</span>
                           <small>{categorySubtitle}</small>
                         </div>
-                        <AiOutlineCaretDown className="caret" />
+                        {categoryTitle !== "Video Blogs" ? (
+                          <AiOutlineCaretDown className="caret" />
+                        ) : (
+                          <></>
+                        )}
                         {currentDropDown &&
                           categoryTitle === currentDropDown.categoryTitle && (
-                            <DropDown links={links} hasLinks={hasLinks} selected={selected}/>
+                            <DropDown
+                              links={links}
+                              hasLinks={hasLinks}
+                              selected={selected}
+                            />
                           )}
                       </NavLink>
                     </li>

@@ -23,7 +23,6 @@ export const DropDownWrapper = styled.div`
 `;
 
 export const LinksList = styled.ul`
-height: 0;
 list-style: none;
 padding: 0;
 margin: 0;
