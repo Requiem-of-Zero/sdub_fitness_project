@@ -101,7 +101,7 @@ export const NavContentContainer = styled.div`
   justify-content: center;
   margin: 0 auto;
   max-width: 1050px;
-  height: 73px;
+  height: 90px;
 `;
 export const NavBarBackgroundLayer = styled.div`
   background: rgba(0, 0, 0, 0.87);
@@ -112,12 +112,10 @@ export const NavLinks = styled.ul`
   justify-content: center;
   height: inherit;
   position: relative;
-  li {
-    transform: skew(-20deg);
-  }
 `;
 
 export const NavLink = styled.a`
+transform: skew(-15deg);
   font-family: "Arial";
   font-style: italic;
   text-decoration: none;
