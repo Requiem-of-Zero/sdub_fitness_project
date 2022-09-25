@@ -15,7 +15,6 @@ export const LabelWrapper = styled.div`
   bottom: 0;
   width: 100%;
   height: 110px;
-  padding: 20px 0 10px 0;
   background: rgba(0, 0, 0, 0.7);
   ${({ playing }) =>
     playing &&
