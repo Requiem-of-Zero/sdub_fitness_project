@@ -1,14 +1,17 @@
 import styled from "styled-components";
 
 export const NavBarWrapper = styled.nav`
-  height: 100px;
+  height: 105px;
   ul {
     display: flex;
     list-style: none;
   }
+  `;
+  
+  export const NavBarContainer = styled.div`
+  width: 100%;
+  position: fixed;
 `;
-
-export const NavBarContainer = styled.div``;
 
 export const SecondaryNavBar = styled.div`
   background: black;
@@ -20,6 +23,10 @@ export const SecondaryNavBarContent = styled.div`
   justify-content: space-between;
   max-width: 980px;
   height: 32px;
+  a:hover {
+    color: blue;
+    text-decoration: underline;
+  }
 `;
 
 export const SocialsContainer = styled.div`
@@ -31,6 +38,11 @@ align-items: center;
   }
   a {
     color: #444444;
+
+    :hover{
+      color: #fff;
+      transition: color 0.4s ease;
+    }
   }
 `;
 
@@ -63,11 +75,25 @@ export const LoginSignupContainer = styled.div`
     margin: 0 10px 0 0;
     padding: 0 10px 0 0;
     border-right: 1px solid #fff;
+    a {
+      color: blue;
+      :hover {
+        text-decoration: underline;
+      }
+    }
+  }
+
+  li:not(:first-child) {
+    a:hover {
+      color: blue;
+      text-decoration: underline;
+    }
   }
   padding: 0 20px;
 `;
 
-export const NavContent = styled.div``;
+export const NavContent = styled.div`
+`;
 
 export const NavContentContainer = styled.div`
   display: flex;
@@ -85,6 +111,9 @@ export const NavLinks = styled.ul`
   justify-content: center;
   height: inherit;
   position: relative;
+  li {
+    transform: skew(-20deg);
+  }
 `;
 
 export const NavLink = styled.a`
@@ -95,7 +124,9 @@ export const NavLink = styled.a`
   text-align: center;
   padding: 23px 4px;
   display: flex;
+  border-right: 1px solid #313131;
   &:hover {
+    background: blue;
   }
   div {
     display: flex;
