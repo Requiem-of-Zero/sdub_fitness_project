@@ -10,6 +10,7 @@ export const NavBarWrapper = styled.nav`
   
   export const NavBarContainer = styled.div`
   width: 100%;
+  z-index: 999;
   position: fixed;
 `;
 
