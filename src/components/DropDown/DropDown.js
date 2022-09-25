@@ -1,10 +1,11 @@
 import React from "react";
 import { DropDownWrapper, LinksList } from "./DropDown.styles";
 
-const DropDown = ({ links }) => {
+const DropDown = ({ links, hasLinks, selected }) => {
+
   return (
-    <DropDownWrapper>
-      <LinksList>
+    <DropDownWrapper hasLinks={hasLinks}>
+      <LinksList hasLinks={hasLinks} selected={selected}>
         {links.map((link, i) => {
           const key = "dropdown_link-" + i;
           const { label, subLabel, url } = link;

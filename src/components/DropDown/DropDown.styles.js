@@ -2,11 +2,12 @@ import styled from "styled-components";
 
 export const DropDownWrapper = styled.div`
   position: absolute;
-  max-width: 300px;
+  min-width: 170px;
   background: blue;
   border-radius: 6px;
+  display: none;
   top: 100%;
-  height: 0;
+  ${({hasLinks}) => hasLinks && `
   :after {
     position: absolute;
     top: -6px;
@@ -16,25 +17,30 @@ export const DropDownWrapper = styled.div`
     border-bottom: 6px solid #ffffff;
     border-left: 6px solid transparent;
     content: "";
-  }
+}
+`}
+
 `;
 
 export const LinksList = styled.ul`
+height: 0;
 list-style: none;
 padding: 0;
 margin: 0;
 display: flex;
 flex-direction: column;
+${({hasLinks}) => hasLinks && `
 li > a {
     text-decoration: none;
     text-align: center;
     background: blue;
+
     padding: 20px 4px;
     display: flex;
     flex-direction: column;
     :hover {
       background: #fff;
-      transition: background 0.2s ease-in-out;
+      transition: background 0.2s easey-out;
       small {
         color: black;
       }
@@ -49,4 +55,6 @@ li > a {
       font-size: 11px;
     }
   }
+
+`}
 `;

@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React, { useState } from "react";
 import {
   NavBarWrapper,
   NavBarContainer,
@@ -23,9 +23,8 @@ import { HiShoppingCart } from "react-icons/hi";
 import { AiOutlineCaretDown } from "react-icons/ai";
 
 const Navbar = ({ logoImgUrl, categorySections }) => {
-  const [currentDropDownId, setCurrentDropDown] = useState(null), [isShown, setIsShown] = useState(false);
+  const [currentDropDownId, setCurrentDropDown] = useState(null);
   const currentDropDown = categorySections[currentDropDownId];
-  console.log("🚀 ~ file: Navbar.js ~ line 28 ~ Navbar ~ currentDropDown", currentDropDown)
 
   return (
     <NavBarWrapper>
@@ -89,24 +88,44 @@ const Navbar = ({ logoImgUrl, categorySections }) => {
         <NavContent>
           <NavBarBackgroundLayer>
             <NavContentContainer>
-              <Logo src={logoImgUrl} />
+              <a href="https://www.google.com">
+                <Logo src={logoImgUrl} />
+              </a>
               <NavLinks>
                 {categorySections.map((category, i) => {
                   const key = "category-" + i;
-                  const { categoryTitle, categorySubtitle, categoryUrl, links } =
-                    category;
+                  const {
+                    categoryTitle,
+                    categorySubtitle,
+                    categoryUrl,
+                    links,
+                  } = category;
+                  const hasLinks = links.length ? true : false;
+                  const selected = currentDropDown && (categoryTitle === currentDropDown.categoryTitle);
+                  console.log(
+                    "🚀 ~ file: Navbar.js ~ line 99 ~ {categorySections.map ~ hasLinks",
+                    hasLinks
+                  );
                   return (
-                    <li key={key} onMouseEnter={() => {
-                      setCurrentDropDown(i);
-                      setIsShown(true);
-                    }}>
+                    <li
+                      key={key}
+                      onMouseEnter={() => {
+                        setCurrentDropDown(i);
+                      }}
+                      onMouseLeave={() => {
+                        setCurrentDropDown(null);
+                      }}
+                    >
                       <NavLink href={categoryUrl}>
                         <div>
                           <span>{categoryTitle}</span>
                           <small>{categorySubtitle}</small>
                         </div>
                         <AiOutlineCaretDown className="caret" />
-                        <DropDown links={links}/>
+                        {currentDropDown &&
+                          categoryTitle === currentDropDown.categoryTitle && (
+                            <DropDown links={links} hasLinks={hasLinks} selected={selected}/>
+                          )}
                       </NavLink>
                     </li>
                   );
