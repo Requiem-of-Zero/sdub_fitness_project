@@ -75,7 +75,7 @@ const Navbar = ({ logoImgUrl, categorySections }) => {
               <LoginSignupContainer>
                 <ul>
                   <li>
-                    <a href="#login">Login</a>
+                    <a href="/api/auth/login">Login</a>
                   </li>
                   <li>
                     <a href="#signup">Sign Up</a>
