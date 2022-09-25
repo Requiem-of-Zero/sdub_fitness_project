@@ -101,7 +101,7 @@ export const NavContentContainer = styled.div`
   justify-content: center;
   margin: 0 auto;
   max-width: 1050px;
-  height: 90px;
+  height: 73px;
 `;
 export const NavBarBackgroundLayer = styled.div`
   background: rgba(0, 0, 0, 0.87);
